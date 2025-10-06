@@ -14,11 +14,11 @@ body {
 }
 
 h1 {
-    font-size: 3.125rem;
+    font-size: 3.75rem; /*this is 60px */
     font-weight: normal;
     font-family: Verdana;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.25rem 2.5rem;  /*this is 20px up and down & 40px left and right */
 }
 
 h2 {
@@ -39,16 +39,66 @@ p {
 
 }
 
+
+
+span a{
+    font-size: 1.3125rem;
+    font-family: Verdana;
+    text-align: center;
+    color: gray;
+    padding: 0.5rem .5rem 1.5rem .5rem;
+
+}
+
 a {
     text-decoration: underline;
     color: aquamarine;
     padding: 0.5rem .5rem 1.5rem .5rem;
+}
 
+span a {
+    text-decoration: none;
+    display: inline-block;
 
+}
+
+.nav-logo a {
+    text-decoration: none;
 }
 
 a:hover {
     color: white;
+}
+
+.nav-logo a h1:hover {
+    color: rgb(235, 34, 34);
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.25rem; 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border: .5px solid gray;
+    background-color: black;
+    
+}
+
+.nav-logo {
+
+    font-weight: bold;
+    font-family: Verdana;
+    text-align: center;
+    /* padding: 0 1.25rem 0 0; */
+}
+
+.nav-logo h1 {
+    font-size: 1.5rem;
 }
 
 .main-container {
@@ -59,9 +109,13 @@ a:hover {
     height: 100%vh;
     text-align: center;
     padding: 20px;
-    
 }
 
+.main-content-con {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 160px;
+}
 .main {
     display: flex;
     flex-direction: column;
@@ -71,9 +125,6 @@ a:hover {
     padding: 1.25rem; 
 }
 
-.main-content {
-    padding: 1.125rem 0.625rem 1.25rem 0.625rem;
-}
 
 .footer {
     display: flex;

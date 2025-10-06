@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+body {
+    background-color: #000;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 3.125rem;
+    font-weight: normal;
+    font-family: Verdana;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h2 {
+    font-size: 2.625rem;
+    font-weight: 300;
+    font-family: Verdana;
+    text-align: center;
+    padding: 1.5rem;
+
+}
+
+p {
+    font-size: 1.3125rem;
+    font-family: Verdana;
+    text-align: center;
+    color: gray;
+    padding: 0.5rem .5rem 1.5rem .5rem;
+
+}
+
+a {
+    text-decoration: underline;
+    color: aquamarine;
+    padding: 0.5rem .5rem 1.5rem .5rem;
+
+
+}
+
+a:hover {
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%vh;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.25rem; 
+}
+
+.main-content {
+    padding: 1.125rem 0.625rem 1.25rem 0.625rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    
+}

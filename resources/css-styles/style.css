@@ -13,6 +13,8 @@ body {
 
 }
 
+/*TEXT STYLES*/
+
 h1 {
     font-size: 3.75rem; /*this is 60px */
     font-weight: normal;
@@ -22,84 +24,91 @@ h1 {
 }
 
 h2 {
-    font-size: 2.625rem;
+    font-size: 2.25rem; /*this is 40px*/
     font-weight: 300;
     font-family: Verdana;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.25rem 2.5rem; /*this is 20px up and down & 40px left and right*/
 
 }
+
 
 p {
-    font-size: 1.3125rem;
+    /* font-size: 1.3125rem; */
     font-family: Verdana;
     text-align: center;
     color: gray;
-    padding: 0.5rem .5rem 1.5rem .5rem;
-
+    padding: 1.25rem 2.5rem;  /*this is 20px up and down & 40px left and right */
 }
 
 
 
-span a{
-    font-size: 1.3125rem;
-    font-family: Verdana;
-    text-align: center;
-    color: gray;
-    padding: 0.5rem .5rem 1.5rem .5rem;
-
-}
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: aquamarine;
-    padding: 0.5rem .5rem 1.5rem .5rem;
-}
-
-span a {
-    text-decoration: none;
-    display: inline-block;
+    /* padding: 1.25rem 2.5rem;   */
+    /*this is 20px up and down & 40px left and right*/
 
 }
 
-.nav-logo a {
-    text-decoration: none;
+
+/*Hover styles*/
+
+a:hover,
+.logo:hover,
+.nav:hover {
+    color: rgb(176, 66, 209);
 }
 
-a:hover {
-    color: white;
-}
 
-.nav-logo a h1:hover {
-    color: rgb(235, 34, 34);
-}
+
+
+/*NAV-STYLES*/
 
 .main-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 1.25rem; 
+    width: 100%; 
     position: fixed;
     top: 0;
     z-index: 1000;
-    border: .5px solid gray;
+    border-bottom: .5px solid gray;
     background-color: black;
     
 }
 
 .nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5625rem 1.25rem; /*this is 25px up and down & 20px left and right */
 
+}
+
+.logo {
+    font-size: 1.5rem; /*20px*/
     font-weight: bold;
-    font-family: Verdana;
-    text-align: center;
-    /* padding: 0 1.25rem 0 0; */
+    padding: 0 1.5rem; /*this is 0px up and down & 24px left and right */
+
 }
 
-.nav-logo h1 {
-    font-size: 1.5rem;
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5625rem 1.25rem; /*this is 25px up and down & 20px left and right */
+    gap: 1.25rem; /*this is 20px*/  
 }
+
+.nav {
+    font-size: 1.125rem; /*this is 18px*/
+    font-weight: 500;
+    padding: 0.625rem 1.25rem; /*this is 10px up and down & 20px left and right */
+}
+
 
 .main-container {
     display: flex;
@@ -109,6 +118,7 @@ a:hover {
     height: 100%vh;
     text-align: center;
     padding: 20px;
+    margin: 0 auto;
 }
 
 .main-content-con {
@@ -134,3 +144,19 @@ a:hover {
     width: 100%;
     
 }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
